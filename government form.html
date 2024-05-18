@@ -1,0 +1,1326 @@
+<html>
+
+<head>
+    <style>
+        .govt {
+            width: 800px;
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        .side {
+            width: 100%;
+            text-align: right;
+            margin-top: 100px;
+        }
+
+        .apply {
+            width: 792px;
+            text-align: center;
+        }
+
+        .grant {
+            width: 646px;
+            text-align: center;
+            margin-left: 76px;
+        }
+
+        .name {
+            width: 348px;
+            text-align: left;
+            margin-top: 22px;
+            flex-direction: column;
+            display: flex;
+            gap: 5px;
+        }
+
+        .nfont {
+            font-size: 18px;
+        }
+
+        .frame {
+            width: 850px;
+            flex-direction: row;
+            display: flex;
+            gap: 250px;
+        }
+
+        .photo {
+            margin-top: 22px;
+            width: 150px;
+            height: 220px;
+            border: 2px solid #747575;
+        }
+
+        .photow {
+            text-align: center;
+            padding-top: 38%;
+            font-size: 14px;
+        }
+
+        .forms {
+            width: 800px;
+            margin-top: 26px;
+        }
+
+        .form-row {
+            flex-direction: row;
+            display: flex;
+            border-top: 1px solid #747575;
+        }
+
+        .sno {
+            width: 50px;
+            border-left: 1px solid #747575;
+        }
+
+        .section1 {
+            width: 376px;
+            border-left: 1px solid #747575;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .section2 {
+            width: 376px;
+            border-left: 1px solid #747575;
+            flex-direction: column;
+            display: flex;
+            border-right: 1px solid #747575;
+        }
+
+        .textbox1 {
+            width: 276px;
+            height: 38px;
+            box-sizing: border-box;
+            border: none
+        }
+
+        .tfont {
+            font-size: 15px;
+        }
+
+        .efont {
+            font-size: 18px;
+        }
+
+        .char {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .varchar {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .bottom {
+            border-bottom: 1px solid #747575;
+        }
+
+        .varcharname {
+            width: 100px;
+            height: 38px;
+            font-size: 18px;
+            text-align: left;
+            border-right: 1px solid #747575;
+        }
+
+        .varcharvalue {
+            width: 276px;
+            height: 38px;
+        }
+
+        .gap {
+            margin-left: 5px;
+        }
+
+        .Empty {
+            flex-direction: column;
+            display: flex;
+            border-right: 1px solid #747575;
+        }
+
+        .empty {
+            width: 271px;
+            height: 77px;
+            border-bottom: 1px solid #747575;
+        }
+
+        .emptyy {
+            width: 271px;
+            height: 77px;
+        }
+
+        .table2 {
+            width: 800px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .gender {
+            width: 750px;
+            flex-direction: row;
+            display: flex;
+            gap: 30px;
+            padding-left: 5px;
+        }
+
+        .gen {
+            width: 748px;
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+            border-left: 1px solid #747575;
+            border-right: 1px solid #747575;
+            font-size: 15px;
+        }
+
+        .tick {
+            text-align: left;
+            padding-left: 5px;
+        }
+
+        .table3 {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .box {
+            width: 50px;
+            height: 20px;
+        }
+
+        .transgender {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+        }
+
+        .birth {
+            width: 374px;
+            border: 1px solid #747575;
+            text-align: left;
+            padding-bottom: 4px;
+        }
+
+
+        .parent {
+            border-left: 1px solid #747575;
+            border-right: 1px solid #747575;
+        }
+
+        .parentt {
+            text-align: left;
+            margin-left: 5px;
+            padding-bottom: 4px;
+            width: 580px;
+        }
+
+        .parenttt {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .birthh {
+            width: 376px;
+            border-right: 1px solid #747575;
+            text-align: left;
+            padding-bottom: 18px;
+            border-top: 1px solid #747575;
+        }
+
+        .DOB {
+            width: 377px;
+            border-left: 1px solid #747575;
+            text-align: left;
+            padding-bottom: 4px;
+            border-right: 1px solid #747575;
+            padding-top: 8px;
+        }
+
+        .boxes {
+            width: 373px;
+            border-left: 1px solid #747575;
+            text-align: left;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .font {
+            font-size: 13px;
+            padding-bottom: 4px;
+        }
+
+        .scc {
+            width: 200px;
+        }
+
+        .caste {
+            border: 1px solid #747575;
+            padding-bottom: 10px;
+        }
+
+        .bx {
+            width: 750px;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .bxx {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .pad {
+            padding-bottom: 14px;
+        }
+
+        .gapp {
+            padding-bottom: 10px;
+            margin-left: 5px;
+            flex-direction: column;
+            display: flex;
+            gap: 5px;
+        }
+
+        .notes {
+            width: 798px;
+            border: 1px solid #747575;
+        }
+
+        .black {
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .padd {
+            padding-bottom: 150px;
+        }
+
+        .currentyear {
+            flex-direction: row;
+            display: flex;
+            gap: 90px;
+        }
+
+        .current {
+            flex-direction: column;
+            display: flex;
+            gap: 8px;
+        }
+
+        .y {
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .yy {
+            padding-bottom: 5px;
+        }
+
+        .noyear {
+            flex-direction: row;
+            display: flex;
+            gap: 20px;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .noyearr {
+            flex-direction: row;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .noyr {
+            flex-direction: row;
+            display: flex;
+            gap: 19px;
+            align-items: center;
+        }
+
+        .ygap {
+            margin-left: 20px;
+        }
+
+        .table13 {
+            width: 800px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .coursename {
+            width: 132px;
+            border: 1px solid #747575;
+        }
+
+        .mainsub {
+            width: 235px;
+            border: 1px solid #747575;
+        }
+
+        .center {
+            margin-top: 20px;
+        }
+
+        .centerr {
+            margin-top: 30px;
+        }
+
+        .threebox {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .eebox {
+            flex-direction: row;
+            display: flex;
+            width: 750px;
+        }
+
+        .time {
+            padding-top: 5px;
+        }
+
+        .register {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .clr {
+            border: 1px solid #747575;
+        }
+
+        .category {
+            width: 750px;
+            flex-direction: row;
+            display: flex;
+            gap: 40px;
+        }
+
+        .scholar {
+            width: 325px;
+        }
+
+        .tenstd {
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .full {
+            width: 800px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .half {
+            width: 200px;
+            border: 1px solid #747575;
+        }
+
+        .halfemp {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #747575;
+        }
+
+        .receipt {
+            width: 546px;
+            border: 1px solid #747575;
+        }
+
+        .rr {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .rec {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .challen {
+            text-align: left;
+            margin-left: 28px;
+        }
+
+        .para {
+            flex-direction: row;
+            display: flex;
+        }
+
+        .dobsize {
+            width: 376px;
+            height: 38px;
+            border: none;
+        }
+
+        .dobborder {
+            border-right: 1px solid #747575;
+        }
+
+        .txtvalue {
+            width: 376px;
+            border-top: 1px solid #747575;
+
+        }
+
+        .subcaste {
+            width: 380px;
+            border-right: 1px solid #747575;
+            border-left: 1px solid #747575;
+        }
+
+        .boxborder {
+            border-top: 1px solid #747575;
+        }
+
+        .size {
+            width: 374px;
+            height: 130px;
+            border: none;
+        }
+
+        .or {
+            width: 377px;
+            height: 56px;
+            border: none;
+        }
+
+        .Designation {
+            width: 378px;
+            height: 142px;
+            border: none;
+        }
+
+        .state {
+            width: 378px;
+            height: 174px;
+            border: none;
+        }
+
+        .annual {
+            width: 378px;
+            height: 104px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="govt">
+        <div class="side">
+            ஆ.தி.ப.ந. 73
+        </div>
+        தமிழ்நாடு அரசு
+        <h2>GOVERNMENT OF TAMIL NADU</h2>
+        ஆதிதிராவிடர் மற்றும் பழங்குடியினர் நலத்துறை
+        <h3>ADI DRAVIDAR AND TRIBAL WELFARE DEPARTMENT</h3>
+        <div class="apply">
+            மத்திய / மாநில அரசு கல்வி உதவித் தொகை திட்டம் - பள்ளி இறுதி தேர்வுக்கு மேற்பட்ட
+            படிப்பிற்குரிய உதவித்தொகை பெறுவதற்கான விண்ணப்பம்.
+        </div>
+        <div class="grant">
+            <div>
+                <h3>FORM TO APPLY FOR THE GRANT OF GOVERNMENT OF INDIA / STATE GOVERNMENT POST MATRIC SCHOLARSHIPS</h3>
+            </div>
+            <div>
+                <h3>FRESH FORM</h3>
+            </div>
+        </div>
+        <div class="frame">
+            <div>
+                <div class="name">
+                    <div>
+                        கல்வி நிறுவனத்தின் பெயர்
+                    </div>
+                    <div class="nfont">
+                        Name of the institution
+                    </div>
+                </div>
+                <div class="name">
+                    <div>தற்போது கல்வி பயிலும் கல்வியாண்டு</div>
+                    <div class="nfont">Academic Year</div>
+                </div>
+                <div class="name">
+                    <div>இணைய பயன்பாட்டில் மாணவருக்கு ஒதுக்கப்பட்ட அடையாள எண்:</div>
+                    <div class="nfont">Scholarship Student Id Generated in Online: (To be filled by the institution)
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <div class="photow">
+                    மாணவரின் தற்போதைய புகைப்பட நகல் இணைக்கப்பட வேண்டும்.
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-row">
+                <div class="sno">
+                    1
+                </div>
+                <div class="section1">
+                    <div class="gap">
+                        மாணவர் பெயர் (தெளிவான எழுத்துக்களில்)
+                    
+                    
+                        Full Name of the Student (in Block letters)
+                    </div>
+                </div>
+                <div class="section2">
+                    <div class="char">
+                        <div class="varcharname bottom">
+                            <div class="gap">
+                                தமிழ்
+                            </div>
+                        </div>
+                        <div class="varcharvalue bottom">
+                            <input type="text" class="textbox1">
+                        </div>
+                    </div>
+                    <div class="varchar">
+                        <div class="varcharname">
+                            <div class="gap">
+                                English
+                            </div>
+                        </div>
+                        <div class="varcharvalue">
+                            <input type="text" class="textbox1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="sno">
+                    2
+                </div>
+                <div class="gen">
+                    <div class="tick">
+                        <span class=tfont>பாலினம் / Gender (டிக் செய்யவும்)</span>
+                    </div>
+                    <div class="gender">
+                        <div>
+                            <span class="transgender"><span class=tfont>1.ஆண்</span>/<span class=efont>Male</span><input
+                                    type="checkbox" class="box" checked></span>
+                        </div>
+                        <div>
+                            <span class="transgender"><span class=tfont>2.பெண்</span>/<span
+                                    class=efont>Female</span><input type="checkbox" class="box" checked></span>
+                        </div>
+                        <div>
+                            <span class="transgender"><span class=tfont>3.மூன்றாம் பாலினம்</span>/<span
+                                    class=efont>Transgender</span><input type="checkbox" class="box" checked></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="sno">
+                    3
+                </div>
+                <div class="section1">
+                    <div class="gap">
+                        <span class=tfont>பிறந்த தேதி</span> / <span class=efont>Date of Birth</span>
+                    </div>
+                </div>
+                <div class="section2">
+                    <input type="text" class="dobsize">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="sno">
+                    4
+                </div>
+                <div class="gen">
+                    <div class="parentt">
+                        பெற்றோர் அல்லது பாதுகாவலர் விவரம்Parent or
+                            Guardian Details:
+                        (பெற்றோர் இல்லை எனில் பாதுகாவலர் விவரம் குறிப்பிடப்பட வேண்டும்)
+                    </div>
+                    <div class="gen">
+                        <div class="section2">
+
+                        </div>
+                        <div class="section2">
+
+                        </div>
+                        
+                    </div>
+                    
+            தாய் பெயர்</span> / <span class=efont>Name of the Mother</span>
+            தந்தை பெயர்</span> / <span class=efont>Name of the Father
+            பாதுகாவலர்</span> / <span class=efont>Name of the Guardian
+            பெற்றோர் அல்லது பாதுகாவலர் விவரம்Parent or
+                            Guardian Details:
+                        (பெற்றோர் இல்லை எனில் பாதுகாவலர் விவரம் குறிப்பிடப்பட வேண்டும்)
+            <div class="form-row">
+                <div class="sno">
+                    5
+                </div>
+                <div class="bx">
+                    <div class="bxx">
+                        <div class="boxes">
+                            <div class="gap">
+                                <div>
+                                    <span class="tfont">சாதி விவரம்</span> / <span class="efont">Community
+                                        Details:</span>
+                                </div>
+                                <div class="font">
+                                    <div>
+                                        (a) பட்டியல் இனத்தவர்(SC)
+                                    </div>
+                                    <div>
+                                        (b) பழங்குடியினர்(ST)
+                                    </div>
+                                    <div>
+                                        (c) கிறித்துவ மதத்திற்கு மாறிய பட்டியல் இனத்தவர்
+                                    </div>
+                                </div>
+                                <div class="scc">
+                                    <span class="efont">Scheduled Caste Converted to Christianity (SCC)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subcaste">
+                            <input type="text" class="size">
+                        </div>
+                    </div>
+                    <div class="bx boxborder">
+                        <div class="bxx">
+                            <div class="boxes">
+                                <div class="gap">
+                                    <div class="pad">
+
+                                        <span class="tfont">சாதி உப்பிரிவு பெயர்</span> / <span class="efont">Sub caste
+                                            Name:</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subcaste">
+                                <input type="text" class="dobsize">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="sno">
+                    6
+                </div>
+                <div class="bx">
+                    <div class="bxx">
+                        <div class="boxes">
+                            <div class="gapp">
+                                <div>
+                                    <span class="tfont">பெற்றோர் அல்லது பாதுகாவலர் தொழில்</span>
+                                </div>
+                                <div>
+                                    <span class="efont">Parent or Guardian Occupation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subcaste">
+                            <input type="text" class="or">
+                        </div>
+                    </div>
+                    <div class="bxx">
+                        <div class="boxes">
+                            <div class="gap boxborder">
+                                <span class="para">
+                                    மாணவரின் பெற்றோர் அல்லது பாதுகாவலர் மத்திய அரசு / மாநில அரசு /
+                                    தனியார் நிறுவன ஊழியர்
+                                    எனில்,
+                                    பதவியின் பெயர், பணிபுரியும் நிறுவனத்தின் விவரம்.If
+                                    the student's Parent/Guardian is
+                                    working
+                                    in Govt of India State Govt / Private Sector, Designation and Office
+                                    details.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="subcaste boxborder">
+                            <input type="text" class="Designation">
+                        </div>
+                    </div>
+                    <div class="bxx">
+                        <div class="boxes boxborder">
+                            <div class="gap pad">
+                                பணிபுரியும் மத்திய அரசு / மாநில அரசு / தனியார் நிறுவனத்திடமிருந்து பெறப்பட்ட வருமானச்
+                                சான்றிதழில் குறிப்பிட்டுள்ள வருமானத்தை எழுத வேண்டும். (ஊதியச்சான்று நகல் இணைக்கப்பட )
+                                Income
+                                as per Salary Certificate obtained from the Govt of India / State Govt Private
+                                Organisation
+                                (Salary Certificate is to be enclosed)
+                            </div>
+                        </div>
+                        <div class="subcaste boxborder">
+                            <input type="text" class="state">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="sno">
+                    7
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        குடும்ப ஆண்டு வருமானம் / Family Annual Income (வட்டாட்சியர் வழங்கிய வருமானச் சான்றிதழில்
+                        குறிப்பிடப்பட்டுள்ள வருமானத்தை எழுத வேண்டும்.)
+                    </div>
+                </div>
+                <div class="subcaste boxborder">
+                    <input type="text" class="annual">
+                </div>
+            </div>
+            <div class="notes">
+                குறிப்பு / <span class="black">Note:</span> திருமணமான பெண் விண்ணப்பதாரர் எனில், கணவரின் பெயரில்
+                பெறப்பட்ட வருமானச் சான்றிதழ்
+                மட்டுமே இணைக்கப்பட வேண்டும். Married women applicants should enclose income certificate of their
+                husband.
+            </div>
+            <div class="table3">
+                <div class="sno">
+                    8
+                </div>
+                <div class="birth">
+                    <div class="gap padd">
+                        <span class="tfont">நிரந்தர முகவரி அஞ்சல் குறியீட்டுடன்</span> <span class="efont">Permanent
+                            Address with Postal Pincode</span>
+                    </div>
+                </div>
+                <div class="birth">
+                    <div class="gap padd">
+                        <span class="tfont">தற்காலிக முகவரி அஞ்சல் குறியீட்டுடன்</span> <span class="efont">Temporary
+                            Address with Postal Pincode</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table3">
+                <div class="sno">
+                    9
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        <div>
+                            <span class="tfont">மாணவரின் ஆதார் எண்.</span>
+                        </div>
+                        <div>
+                            <span class="efont">Student's Aadhaar Number</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="birth">
+
+                </div>
+            </div>
+            <div class="table3">
+                <div class="sno">
+                    10
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        <div>
+                            <span class="tfont">மாணவர் அல்லது பெற்றோரின் தொலைபேசி</span>
+                        </div>
+                        <div>
+                            <span class="tfont">எண்</span><span class="efont">/Student's or Parent's Phone Number</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="birth">
+
+                </div>
+            </div>
+            <div class="table3">
+                <div class="sno">
+                    11
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        <div>
+                            <span class="tfont">மாணவரின் மின்னஞ்சல் முகவரி</span>
+                        </div>
+                        <div>
+                            <span class="efont">Student's e-mail id</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="birth">
+
+                </div>
+            </div>
+            <div class="form-row1">
+                <div class="sno">
+                    12
+                </div>
+
+                <div class="gen pad">
+                    <div class="y">
+                        <div class="yy">
+                            <span class="tfont">நடப்பாண்டில் மாணவர் கல்வி பயிலும் ஆண்டு</span> / <span
+                                class="efont">Class
+                                of Study in Current Year</span>
+                        </div>
+                        <div class="currentyear">
+                            <div class="current efont">
+                                <div class="ygap">
+                                    <span class="noyearr">(a) I Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                                <div class="ygap">
+                                    <span class="noyear">(d) IV Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                            </div>
+                            <div class="current">
+                                <div>
+                                    <span class="noyear">(b) II Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                                <div>
+                                    <span class="noyear">(e) V Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                            </div>
+                            <div class="current">
+                                <div>
+                                    <span class="noyr">(c) III Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                                <div>
+                                    <span class="noyear">(f) VI Year<input type="checkbox" class="box" checked></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    13
+                </div>
+                <div class="threebox">
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                மாணவர் பயிலும் பாடத்தின் பெயர் மற்றும் பிரிவின் பெயர் / Course&Subject of Study of the
+                                applicant
+                                (Examble: Course Β.Α., Subject-Tamil)
+                            </div>
+                        </div>
+                        <div class="coursename">
+                            <div class="centerr">
+                                Course Name
+                            </div>
+                        </div>
+                        <div class="mainsub">
+                            <div class="center">
+                                <div>
+                                    Main subject
+                                </div>
+                                <div>
+                                    முதன்மைப் பாடப்பிரிவு
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                1) மேல்நிலை வகுப்பு / Higher Secondary Class(+lor+2), Maths Biology, Commerce Computer,
+                                History, etc.)
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                2)இளநிலைப் பட்டப்படிப்பு /U.G. Degree Course. Eg. B.A., (tamii) B.Sc., (Maths) etc
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                3)முதுநிலைப் பட்ட மேற்படிப்பு / P.G./ Research Course
+                                Eg. M.A., (Tamil) M.Sc., (Maths), M.Phil., (Tamil/Maths) P.hD., etc..
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                4) / Professional Course Eg.Β.Ε.,Μ.Ε.,B.L., M.L., M.B.B.S., B.D.S., B.Sc.. (Nursing),
+                                C.A., etc...
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                5)பட்டயப்படிப்பு / Diploma Course
+                                Eg. D.E.C.E., D.E. E.E.,etc
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                    <div class="eebox">
+                        <div class="birth">
+                            <div class="gap">
+                                6)சொன்றிதழ் படிப்பு / Certificate Course
+                                (படிப்பின் கால அளவு ஒரு வருடம் இருக்க வேண்டும்/ Duration of Course should be atleast one
+                                year)
+                            </div>
+                        </div>
+                        <div class="coursename">
+
+                        </div>
+                        <div class="mainsub">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    14
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        கல்வி பயிலும் முறை / Category of Study
+                        <div class="time">
+                            1)பகல் நேரம்/Day Time
+                        </div>
+                        <div>
+                            2)மாலை நேரம்/Evening Time
+                        </div>
+                        <div>
+                            3)பகுதி நேரம் / Part Time
+                        </div>
+                        <div>
+                            4)தொலைதூரம்/ Correspondence
+                        </div>
+                    </div>
+                </div>
+                <div class="coursename">
+
+                </div>
+                <div class="mainsub">
+
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    15
+                </div>
+                <div class="birth">
+                    <div class="gap">
+                        மாணவர் பயிலும் படிப்பின் மொத்த கால அளவு Duration of the course pursued by the student
+                    </div>
+                </div>
+
+                <div class="coursename">
+
+                </div>
+                <div class="mainsub">
+
+                </div>
+            </div>
+
+
+            <div class="table13">
+                <div class="sno">
+                    16
+                </div>
+                <div class="birth">
+                    <div class="gap pad">
+                        மாணவர் பத்தாம் வகுப்பு பொதுத் தேர்வில் தேர்ச்சி பெற்ற ஆண்டு / பதிவு எண் / Year and Register
+                        number of Passing 10th Public Examination.
+                    </div>
+                </div>
+                <div class="coursename">
+                    <div class="register">
+                        <div>
+                            <div>
+                                ஆண்டு
+                            </div>
+                            <div>
+                                Year
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mainsub">
+                    <div class="register">
+                        <div>
+                            <div>
+                                பதிவு எண்.
+                            </div>
+                            <div>
+                                Registration No.
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    17
+                </div>
+                <div class="birth">
+                    <div class="gap pad">
+                        மாணவர் பனிரெண்டாம் வகுப்பு பொதுத் தேர்வில் தேர்ச்சி பெற்ற ஆண்டு / பதிவு எண் Year and Register
+                        number of Passing 12th Public
+                        Examination.
+                    </div>
+                </div>
+                <div class="coursename">
+                    <div class="register">
+                        <div>
+                            <div>
+                                ஆண்டு
+                            </div>
+                            <div>
+                                Year
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mainsub">
+                    <div class="register">
+                        <div>
+                            <div>
+                                பதிவு எண்.
+                            </div>
+                            <div>
+                                Registration No.
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    18
+                </div>
+                <div class="birth">
+                    <div class="gap pad">
+                        மாணவர் பட்டயப்படிப்பில் தேர்ச்சி பெற்ற ஆண்டு / பதிவு எண். Year and Register number of Passing
+                        Diplamo Public Examination.
+                    </div>
+                </div>
+                <div class="coursename">
+                    <div class="register">
+                        <div>
+                            <div>
+                                ஆண்டு
+                            </div>
+                            <div>
+                                Year
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mainsub">
+                    <div class="register">
+                        <div>
+                            <div>
+                                பதிவு எண்.
+                            </div>
+                            <div>
+                                Registration No.
+                            </div>
+                        </div>
+                        <div class="clr">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="table2">
+                <div class="sno">
+                    19
+                </div>
+                <div class="gen pad">
+                    <div class="tick">
+                        <span class=tfont>மாணவர் பயிலும் முறை / Category of Study (டிக் செய்யவும்)</span>
+                    </div>
+                    <div class="category">
+                        <div class="scholar gap">
+                            <span class="transgender">A) விடுதியில் அல்லாமல் பெற்றோர் அல்லது பாதுகாவலர் உடன் தங்கி
+                                பயில்பவர் / Day Scholar<input type="checkbox" class="box" checked></span>
+                        </div>
+                        <div class="scholar">
+                            <span class="transgender">B) விடுதியில் தங்கி பயில்வர் Hosteller<input type="checkbox"
+                                    class="box" checked></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="table2">
+                <div class="sno">
+                    20
+                </div>
+                <div class="gen">
+                    <div class="tenstd">
+                        பத்தாம் வகுப்புக்குப் பின்னர் பயின்ற படிப்புகளின் விவரம் / பெறப்பட்ட கல்வி உதவித்தொகை விவரம் /
+                        இடை
+                        நிறுத்தம் இருப்பின் அதன் விவரம்:
+                        Details of postmatric Courses after X standard in which applicant studied Scholarship Details /
+                        If
+                        break of study details should be furnished.
+                    </div>
+                </div>
+            </div>
+            <div class="full">
+                <div class="half">
+                    பயின்ற ஆண்டு மற்றும் படிப்பு விவரம் / Details of study undergone together with year of study
+                </div>
+                <div class="half">
+                    கல்வி நிறுவனத்தின் பெயர் / Name of the institution
+                </div>
+                <div class="half">
+                    கல்வி உதவித்தொகை பெறப்பட்டதா/ Whether obtained Scholarship (Yes/No)
+                </div>
+                <div class="half">
+                    பெறப்பட்ட கல்வி உதவித்தொகை / Amount of Scholarship received
+                </div>
+
+            </div>
+            <div class="full">
+                <div class="halfemp">
+                </div>
+                <div class="halfemp">
+                </div>
+                <div class="halfemp">
+                </div>
+                <div class="halfemp">
+                </div>
+            </div>
+            <div class="table13">
+                <div class="sno">
+                    21
+                </div>
+                <div class="rr">
+                    <div class="rec">
+                        <div class="receipt">
+                            முந்தைய கல்வியாண்டுகளில் மாணாக்கர் பயின்ற வகுப்புகளில் இருவேறு கல்வி உதவித்தொகை
+                            திட்டங்களின்கீழ்
+                            விண்ணப்பித்து கல்வி உதவித்தொகை பெற்றவரா ? (ஆம் எனில் குறைவான பயன்தரும் கல்வி உதவித்தொகை
+                            திட்டத்தின்
+                            கீழ் பெற்ற கல்வி உதவித்தொகையினை அரசுக் கணக்கில் திரும்ப செலுத்தி, செலுத்துச் சீட்டின் நகலை
+                            இணைக்கப்பட வேண்டும்). Whether the applicant is in receipt of more than two scholarship
+                            including
+                            this one? If yes, he should return the scholarship to Govt., which is less beneficial to him
+                            as per
+                            his choice and chellan copy should be enclosed.
+                        </div>
+
+                        <div class="half">
+
+                        </div>
+                    </div>
+                    <div class="rec">
+                        <div class="receipt">
+                            <div class="tenstd">
+                                (ii) செலுத்துச்சீட்டின் எண் மற்றும் நாள்
+                            </div>
+                            <div class="challen"> Challen Number and Date</div>
+                        </div>
+
+                        <div class="half">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="table13">
+                <div class="sno">
+                    22
+                </div>
+                <div class="receipt">
+                    நடப்பு கல்வியாண்டில் மாணாக்கர் போஸ்ட் மெட்ரிக்கல்வி உதவித்தொகை திட்டத்தை தவிர இதர கல்வி உதவித்தொகை
+                    திட்டங்களின் கீழ் பயன்பெற விண்ணப்பித்துள்ளரா? ஆம் எனில் அதன் விவரம். Whether the student has applied
+                    for
+                    any other scholarship scheme other than this scheme? If, yes provide the details of the scheme.
+                </div>
+                <div class="half">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>margin-top: 22px;
+width: 150px;
+height: 220px;
+border: 2px solid #747575;
+padding-top: 50px;
+box-sizing: border-box;
+font-size: 13px;
+}
+user agent stylesheet
+div {
+display: block;
+unicode-bidi: isolate;
+}
+.form {
+width: 800px;
+text-align: center;
+margin: 0px auto;
+}

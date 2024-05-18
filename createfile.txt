@@ -1,0 +1,235 @@
+<html>
+
+<head>
+    <style>
+        .ff {
+            display: flex;
+            flex-direction: row;
+            width: 1000px;
+            gap: 183px;
+            padding-left: 135px;
+        }
+
+        .left {
+            width: 400px;
+            flex-direction: column;
+            display: flex;
+            margin-top: 195px;
+
+        }
+
+        .facebookborder {
+            margin: 0 auto;
+            font-family: inherit;
+            width: 400px;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .facebook {
+            margin: -28px;
+        }
+
+        .help {
+            width: inherit;
+            font-size: 16px;
+            line-height: 28px;
+            color: #1c1e21;
+        }
+
+        .right {
+            width: 396px;
+            flex-direction: column;
+            display: flex;
+            box-shadow: 1px 1px 12px #cec8c8;
+            margin-top: 125px;
+        }
+
+        .bbox {
+            border-radius: 8px;
+            border: 2px solid #dddfe2;
+            line-height: 16px;
+            padding: 14px 16px;
+            text-align: center;
+        }
+
+        .box {
+            font-size: 17px;
+            margin: auto;
+            padding: 6px 0px;
+        }
+
+
+        .widthheight {
+            font-size: 17px;
+            padding: 14px 16px;
+            width: 360px;
+            border-radius: 8px;
+        }
+
+        .button {
+            font-size: 17px;
+            width: 364px;
+            margin: auto;
+            padding: 6px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .clr {
+            background-color: blue;
+            cursor: pointer;
+            color: white;
+            border-radius: 8px;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid rgb(0, 247, 255);
+        }
+
+        input[type=password]:focus {
+            border: 3px solid rgb(0, 247, 255);
+        }
+
+        .text {
+            border: 1px solid #dddfe2;
+        }
+
+        .forgot {
+            text-align: center;
+            color: #0866ff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dddfe2;
+        }
+
+        .create {
+            width: 175px;
+            text-align: center;
+            background-color: rgb(14, 173, 14);
+            font-size: 17px;
+            padding: 14px 16px;
+            border-radius: 10px;
+            color: white;
+            border: 1px solid #dddfe2;
+            cursor: pointer;
+        }
+
+        .gap {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .down {
+            flex-direction: row;
+            display: flex;
+            gap: 10px;
+            color: #737373;
+        }
+
+        .sign {
+            padding-top: 10px;
+            color: #737373;
+            direction: ltr;
+            line-height: 1.34;
+            gap: 10px;
+            flex-direction: column;
+            display: flex;
+            width: 1006px;
+        }
+
+        .signn {
+            border-top: 0.1px solid #dddfe2;
+            padding-top: 3px;
+        }
+
+        .buttom {
+            margin-top: 275px;
+            flex-direction: column;
+            display: flex;
+            padding-left: 135px;
+            box-shadow: 1px 1px 12px #cec8c8;
+            padding-top: 25px;
+            width: 1124px;
+            color:
+            
+        }
+
+        .Rright {
+            flex-direction: column;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ff">
+        <div class="left">
+            <div class="facebookborder">
+                <div class="facebook">
+                    <img id="pick6" class="image" src="c:\Users\ELCOT\Downloads\facebook.svg" alt="Pick a date."
+                        width="320.94px" height="106px">
+                </div>
+                <div class="help">
+                    <h2>Facebook helps you connect and share with the people in your life.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="Rright">
+        <div class="right">
+            <div class="bbox">
+                <div class="box">
+                    <input type="text" name="email&number" placeholder="Email address or phone number"
+                        class="widthheight text">
+                </div>
+                <div class="box">
+                    <input type="password" name="password" placeholder="Password" class="widthheight text">
+                </div>
+                <div class="button">
+                    <input type="button" name="button" value="Log in" class="widthheight clr text">
+                </div>
+                <div class="forgot">
+                    Forgotten password?
+                </div>
+                <div class="gap">
+                    <div class="button">
+                        <input type="button" name="button" value="Create new account" class="create">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="gap">
+                <b>Create a Page</b> for a celebrity, brand or business.
+            </div>
+        </div>       
+    </div>
+        
+            <div class="buttom">
+            <div class="down">
+                <div>
+                    English(UK) தமிழ் తెలుగు ಕನ್ನಡ اردو ह िन्दी മലയാളം සිංහල ਪੰਜਾਬੀ বাংলা ગુજરાતી
+                </div>
+                <div>
+                    <img id="pick6" class="image" src="c:\Users\ELCOT\Downloads\plus-1513-svgrepo-com.svg"
+                        alt="Pick a date." width="20px" height="20px">
+                </div>
+            </div>
+            
+
+            <div class="sign">
+                <div class="signn">
+                    Sign UpLog inMessengerFacebook LiteVideoPlacesGamesMarketplaceMeta PayMeta StoreMeta QuestMeta AIInstagramThreadsFundraisersServicesVoting Information CentrePrivacy PolicyPrivacy CentreGroupsAboutCreate adCreate PageDevelopersCareersCookiesAdChoicesTermsHelpContact uploading and non-usersCancel contracts here
+                </div>
+                <div class="signnn">
+                    Meta © 2024
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,556 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .title {
+            font-size: 40px;
+            margin-top: 80px;
+            color: #000;
+            font-style: normal;
+            border-top: 1px solid #352e2e56;
+            padding-top: 40px;
+            border-bottom: 1px solid #352e2e56;
+            padding-bottom: 40px;
+            line-height: 1.3em;
+            letter-spacing: .01em;
+        }
+
+        .subtitle {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            color: #282828;
+            letter-spacing: .01em;
+            font-size: 34px;
+        }
+
+        .show {
+            color: #282828;
+            font-weight: 300;
+            padding-bottom: 30px;
+            font-size: 26px;
+            line-height: 135%;
+            letter-spacing: .01em;
+            border-bottom: 1px solid #352e2e56;
+            padding-bottom: 40px;
+        }
+
+        .hello {
+            width: 700px;
+            margin: 0px auto;
+            padding-left: 5px;
+        }
+
+        .myform {
+            width: 700px;
+            margin: 0px auto;
+            padding: 40px;
+            gap: 15px;
+            font-size: 20;
+            font-size: 18px;
+            line-height: 1.8em;
+            font-family: "Palatino Linotype", "Book Antiqua", serif;
+            color: #000;
+            border-color: #2685c6;
+            cursor: pointer;
+        }
+
+        .inputBox {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .inputContainer {
+            width: 500px;
+            padding: 10px 14px 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0px;
+            padding-bottom: 10px;
+        }
+        .con {
+            flex-direction: row;
+            display: flex;
+            gap: 2px;
+            align-items: center;    
+        }
+
+        .conn {
+            margin-top: -17px;
+        } 
+        .height {
+            width: 424px;
+            height: 20px;
+        }
+
+        .out {
+            gap: 1px 1px;
+        }
+
+        .inputContainer:focus-within {
+            background-color: #FFF7C0;
+        }
+
+        .clr:focus-within {
+            background-color: #FFF7C0;
+        }
+
+        input[type=text]:focus {
+            border: 3px solid blue;
+        }
+
+
+        .set {
+            gap: 15px 0px;
+            font-size: 18px;
+            box-sizing: border-box;
+            flex-direction: column;
+            display: flex;
+            margin-bottom: 7px;
+            font-family: inherit;
+            width: 400px;
+        }
+
+
+        .date {
+            flex-direction: column;
+            display: flex;
+            letter-spacing: .01em;
+            margin: 0;
+            padding: 6px 1% 9px 1%;
+            clear: both;
+            background-color: transparent;
+            position: relative;
+            -webkit-transition: background-color 350ms ease-out;
+            transition: background-color 350ms ease-out;
+        }
+
+        .email {
+            margin-bottom: 60px;
+        }
+
+        .progress {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding-top: 18px;
+            font-size: 18px;
+        }
+
+        .address {
+            padding: 0px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0px;
+            margin-bottom: 15px;
+            width: 500px;
+        }
+
+        .addressable {
+            padding: 0px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0px;
+            margin-bottom: 15px;
+            width: 400px;
+        }
+
+        .submit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .drag-area {
+            border: 2px dashed #fff;
+            height: 500px;
+            width: 700px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .drag-area header {
+            font-size: 100px;
+            color: #fff;
+        }
+
+        .drag-area span {
+            font-size: 30px;
+            color: #fff;
+            font-weight: 500;
+            margin: 10px 0 15px 0;
+        }
+
+        .required {
+            color: blue;
+        }
+
+        .birth {
+            flex-direction: row;
+
+        }
+
+        .nation {
+            padding: 0px auto;
+        }
+
+        .form {
+            padding: 5px 1px;
+        }
+
+        .create {
+            padding: 0px;
+            width: 300px;
+        }
+
+        .font {
+            font-size: 14px;
+            padding-top: -12px;
+        }
+
+        .buttom {
+            padding-top: 2px;
+
+        }
+
+        .source {
+            padding: 20px 470px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0px;
+            margin-bottom: 15px;
+            width: 60px;
+
+        }
+
+        .get {
+            flex-direction: row;
+            display: flex;
+
+        }
+
+        .area {
+            flex-direction: row;
+            display: flex;
+
+        }
+        .vertical {
+            flex-direction: column;
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="hello">
+        <h1 class="title">SAAT 2024 - Application form</h1>
+        <h2 class="subtitle">SAAT 2024 - SOA ADMISSION TEST</h2>
+        <h2 class="show">SIKSHA 'O' ANUSANDHAN ADMISSION TEST</h2>
+    </div>
+    <div class="myform">
+        <div class="inputContainer">
+            <div class="con">
+            <div class="conn">
+            <span class="required">*</span>
+            </div>
+            <div>
+            Name of the Candidate (Exactly as in your 10th class
+                certificate)
+            </div>
+        </div>
+            <input type="text" name="candidate" class="height" id="candidate">
+        </div>
+        <div class="inputContainer out">
+            <p><span class="required">*</span>Nationality</p>
+            <label class="radio-inline">
+                <input type="radio" name="optradio" checked>Indian
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="optradio" checked>Other
+            </label>
+        </div>
+        <div class="inputContainer set">
+            <label for="gender"><span class="required">*</span>Gender</label>
+            <div>
+                <select name="gender">
+                    <option value="">select
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputContainer set">
+            <div class="vertical">
+                <div class="required">*</div>
+                <div><label for="category">Category</label></div>
+            </div>
+        </div>
+            <div>
+                <select name="category">
+                    <option value="">select
+                    </option>
+                    <option value="general">General</option>
+                    <option value="scheduled caste">scheduled caste</option>
+                    <option value="scheduled tribe">scheduled tribe</option>
+                    <option value="other backward classes">other backward classes</option>
+                    <option value="phyically handicapped">phyically handicapped</option>
+                </select>
+            </div>
+        
+        <div class="inputContainer">
+            <label for="date of birth"><span class="required">*</span>Date of Birth</label>
+            <div class="date">
+                <div class="area">
+                    <div>
+                        <input id="date" name="day" size="2" required>
+                    </div>
+                    <div class="dd">
+                        DD
+                    </div>
+                </div>
+                <div>
+                    <div class="area">
+                        <input id="month" name="month" size="2" required>
+                    </div>
+                    <div class="dd">
+                        <small>MM</small>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input id="year" name="year" size="4" required>
+                        <img id="pick6" class="datepicker" src="https://static.wufoo.com/images/icons/calendar.png"
+                            alt="Pick a date." data-date="2024-06-04" data-date-format="yyyy-dd-mm">
+                    </div>
+                    <div>
+                        <small>YYYY</small>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="inputContainer">
+            <label for="primary mobile number"><span class="required">*</span>Primary mobile number</label>
+            <div>
+                <input id="first" name="first" size="3" required> -
+                <input id="sec" name="sec" size="3" required> -
+                <input id="third" name="third" size="4" required>
+            </div>
+        </div>
+        <div class="inputContainer">
+            <label for="alternate Mobile Number"><span class="required">*</span>Alternate Mobile Number</label>
+            <div>
+                <input id="first" name="first" size="3" required> -
+                <input id="sec" name="sec" size="3" required> -
+                <input id="third" name="third" size="4" required>
+            </div>
+        </div>
+        <div class="email">
+            <div class="inputContainer">
+                <label for="email of the Candidate"><span class="required">*</span>Email of the Candidate</label>
+                <input type="email" id="email of the Candidate" name="Email of the Candidate" />
+            </div>
+        </div>
+        <div class="progress">
+            <p><b>Program Choosen</b>
+            <div>
+                Choose appropriate Program for the Candidate</p>
+            </div>
+            <div class="set">
+                <label for="level of Study"><span class="required">*</span>Level of Study</label>
+                <select name="level of Study">
+                    <option value="">select
+                    </option>
+                    <option value="under graduate program">Under Graduate Program </option>
+                    <option value="post graduate program">Post Graduate Program</option>
+                    <option value="lateral entry program">Lateral Entry program </option>
+                </select>
+            </div>
+            <div class="progress">
+                <p><b>Exam Centre Options</b>
+                <div>
+                    MODE OF EXAM AT ALL CENTRES IS ONLINE (COMPUTER BASED TEST) ONLY
+                </div>
+                </p>
+            </div>
+            <div class="inputContainer set create">
+                <label for="select State or UT for Examination"><span class="required">*</span>State or UT for
+                    Examination</label>
+                <select name="select State or UT for Examination">
+                    <option value="">Select
+                    </option>
+                    <option value="andaman & nicobar">Andaman & Nicobar</option>
+                    <option value="andhra pradesh">Andhra Pradesh</option>
+                    <option value="arunachal pardesh">Arunachal Pardesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="chhattisgarh">Chhattisgarh</option>
+                    <option value="dadra & nagar haveli">Dadra & Nagar Haveli</option>
+                    <option value="daman & diu">Daman & Diu</option>
+                    <option value="delhi(NCT)">Delhi(NCT)</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal pradesh">Himachal Pradesh</option>
+                    <option value="jammu & kashmir">Jammu & Kashmir</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="ladakh">Ladakh</option>
+                    <option value="lakshadweep">Lakshadweep</option>
+                    <option value="madhya pardesh">Madhya Pardesh</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="negaland">Negaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="puducherry">Puducherry</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamilnadu">Tamilnadu</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="uttar pradesh">Uttar Pradesh</option>
+                    <option value="west bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="progress">
+                <p><b>Date of Exam</b>
+                <div>
+                    Dates will be notified later.
+                </div>
+            </div>
+            <p><b>Communication Address</b></p>
+            <div class="address clr">
+                <label for="Address (Line-1)"><span class="required">*</span>Address (Line-1)</label>
+                <input type="text" id="Address (Line-1)" name="Address (Line-1)" />
+            </div>
+            <div class="addressable clr">
+                <label for="Address (Line-2)">Address (Line-2)</label>
+                <input type="text" id="Address (Line-2)" name="Address (Line-2)" />
+            </div>
+            <div class="addressable clr">
+                <label for="city"><span class="required">*</span>City</label>
+                <div class="buttom">
+                    <input type="text" id="city" name="city" required>
+                    <div class="font">
+                        <small>Maximum of 300000 characters. 0</small>
+                    </div>
+                </div>
+            </div>
+            <div class="addressable clr">
+                <label for="District"><span class="required">*</span>District</label>
+                <input type="text" id="District" name="District" />
+            </div>
+            <div clss="clr">
+                <div class="addressable">
+                    <label for="Select State / UT"><span class="required">*</span>Select State / UT</label>
+                    <select name="select State / UT">
+                        <option value="">Select
+                        </option>
+                        <option value="andaman & nicobar">Andaman & Nicobar</option>
+                        <option value="andhra pradesh">Andhra Pradesh</option>
+                        <option value="arunachal pardesh">Arunachal Pardesh</option>
+                        <option value="assam">Assam</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="chandigarh">Chandigarh</option>
+                        <option value="chhattisgarh">Chhattisgarh</option>
+                        <option value="dadra & nagar haveli">Dadra & Nagar Haveli</option>
+                        <option value="daman & diu">Daman & Diu</option>
+                        <option value="delhi(NCT)">Delhi(NCT)</option>
+                        <option value="goa">Goa</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="himachal pradesh">Himachal Pradesh</option>
+                        <option value="jammu & kashmir">Jammu & Kashmir</option>
+                        <option value="jharkhand">Jharkhand</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="ladakh">Ladakh</option>
+                        <option value="lakshadweep">Lakshadweep</option>
+                        <option value="madhya pardesh">Madhya Pardesh</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="manipur">Manipur</option>
+                        <option value="meghalaya">Meghalaya</option>
+                        <option value="mizoram">Mizoram</option>
+                        <option value="negaland">Negaland</option>
+                        <option value="odisha">Odisha</option>
+                        <option value="puducherry">Puducherry</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="rajasthan">rajasthan</option>
+                        <option value="sikkim">Sikkim</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="tripura">Tripura</option>
+                        <option value="uttarakhand">Uttarakhand</option>
+                        <option value="uttar pradesh">Uttar Pradesh</option>
+                        <option value="west bengal">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clr">
+                <label for="Pincode"><span class="required">*</span>Pincode</label>
+                <div class="buttom">
+                    <input type="tel" id="Pincode" name="Pincode" placeholder="" pattern="[0-5]{3} [0-5]{3}" required>
+                    <div class="font">
+                        <small>Minimum value of 6.</small>
+                    </div>
+                </div>
+            </div>
+            </select>
+
+
+
+
+            <div class="progress">
+                <p><b>Document Submission</b>
+                <div>
+                    <span class="required">*</span>10 Marksheet</p>
+                </div>
+                <div>
+                    <label for="doc">choose a file</label>
+
+                    <input type="text" id="doc" values="file limit 10MB">
+                </div>
+            </div>
+
+            <p><span class="required">*</span>Attach a Recent Passport Size Photograph (The size of photo should not
+                exceed 200kb.)</p>
+            <div>
+                <label for="choose a file" class="upload-icon">choose a file</label>
+                <div>
+                    <samll> file limit 100MB</samll>
+                </div>
+                <div>
+                    <input id="choose a file" type="file">
+                </div>
+
+            </div>
+            <div>
+                <p><span class="required">*</span>Declaration</p>
+                <div>
+                    <input type="checkbox" id="del" name="del" value="del">
+                    <label for="del">I hereby submit that this is the first time I am applying for SAAT 2024</label>
+                </div>
+                <div class="source">
+
+                    <input type="button" name="submit" onclick="getValue()" value="submit">
+
+                </div>
+                <script>
+                    function getValue() {
+                        var candi = document.getElementById('candidate').value;
+                        console.log(candi)
+                    }
+                    
+                </script>
+</body>
+
+</html>
