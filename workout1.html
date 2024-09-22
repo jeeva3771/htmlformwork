@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>welcome to html</title>
+    <style>
+        .frame {
+            width: 500px;
+            height: 500px;
+            margin: 0px auto;
+            margin-top: 50px;
+            background-color: blueviolet;
+        }
+
+        .frame-view {
+            width: 400px;
+            text-align: center;
+        }
+
+        .label-area {
+            flex-direction: column;
+            display: flex;
+            gap: 10px;            
+        }
+
+        .name-label {
+            flex-direction: row;
+            display: flex;
+            gap: 16px;
+        
+        }
+
+        .text-label {
+            border-radius: 2px;
+        }
+
+
+        .date-section {
+            padding-left: 32px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="frame-view">
+            <div class="label-area">
+                <div class="name-label">
+                    <div>
+                        FirstName:
+                    </div>
+                    <div>
+                        <input type="text" class="text-label">
+                    </div>
+                </div>
+                <div class="name-label">
+                    <div>
+                        LastName:
+                    </div>
+                    <div>
+                        <input type="text" class="text-label">
+                    </div>
+                </div>
+                <div class="name-label">
+                    <div>
+                        DOB:
+                    </div>
+                    <div>
+                        <span class="date-section"><input type="date" class="text-label"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
